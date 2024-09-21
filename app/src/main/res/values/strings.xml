@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BarcodeScanML</string>
+    <string name="scan_your_barcode">Scan your barcode</string>
+    <string name="camera_access_error_title">Enable Camera</string>
+    <string name="camera_access_error_description">Please enable camera access in your application settings</string>
+    <string name="scanned_barcode">Barcode Scan successful</string>
+    <string name="scanned_barcode_data">Barcode data:\n%s</string>
+    <string name="scanned_barcode_error">Problem scanning barcode, please try again</string>
+</resources>
