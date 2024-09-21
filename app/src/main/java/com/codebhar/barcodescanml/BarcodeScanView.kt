@@ -9,14 +9,12 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.IconButton
@@ -37,7 +35,6 @@ import androidx.compose.ui.geometry.RoundRect
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.ClipOp
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.clipPath
 import androidx.compose.ui.layout.SubcomposeLayout
@@ -212,7 +209,7 @@ fun BarcodeScanView(
                             .padding(16.dp)
                             .fillMaxWidth()
                             .background(
-                                color = Color.Red,
+                                color = Color.DarkGray,
                                 shape = RoundedCornerShape(8.dp)
                             )
                             .padding(
@@ -220,7 +217,6 @@ fun BarcodeScanView(
                                 vertical = 12.dp
                             )
                     ) {
-                        Spacer(modifier = Modifier.height(8.dp))
                         Text(
                             style = TextStyle(
                                 fontWeight = FontWeight.Normal,
@@ -230,7 +226,7 @@ fun BarcodeScanView(
                             ),
                             fontWeight = FontWeight.Normal,
                             color = Color.White,
-                            text = stringResource(id = R.string.scan_your_barcode),
+                            text = stringResource(id = R.string.scan_your_barcode_description),
                             textAlign = TextAlign.Center,
                             modifier = Modifier.fillMaxWidth()
                         )
